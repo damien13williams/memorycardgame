@@ -54,6 +54,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Grid Conatiner for Game */
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 16px; /* Space between cards */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
