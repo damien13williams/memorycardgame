@@ -1,11 +1,16 @@
+html{
+  background: linear-gradient(to bottom, #FF5733, #FF9F00);
+  color: #222222; /* Dark text for contrast */
+  height: 100%;
+  width: 100%;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
+  margin-left: 325px;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,52 +31,106 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  font-family: 'Press Start 2P', cursive;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.4em;
   line-height: 1.1;
 }
 
 button {
+  height: 35px;
+  width: 250px;
+  font-size: 11px;
+  background: linear-gradient(90deg, #FFEA00, #FF5733);  /* Yellow to electric blue gradient */
+  color: #222222;  /* Dark text for good contrast */
+  font-weight: bold;
+  border: 2px solid #FFD700;  /* Golden border to match the theme */
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  padding: 12px 20px;
   cursor: pointer;
-  transition: border-color 0.25s;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.6);  /* Subtle yellow glow */
+  transition: all 0.3s ease;
+  font-family: 'Press Start 2P', cursive;
 }
+
 button:hover {
-  border-color: #646cff;
+  background: linear-gradient(45deg, #4D96FF, #FFEA00);  /* Reverse gradient for hover effect */
+  box-shadow: 0 0 20px rgba(255, 255, 0, 1);  /* Glowing yellow on hover */
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+button:active {
+  transform: scale(0.98);  /* Slightly shrink button when clicked */
 }
+
+
+/* The Card */ 
+.card {
+  width: 100%;
+  max-width: 140px;  /* Adjust based on your desired card size */
+  background-color: #FFEA00;  /* Pikachu-inspired yellow */
+  border: 3px solid #FFD700;  /* Golden border to add a shiny, electric feel */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);  /* Electric yellow shadow */
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);  /* Slightly enlarge on hover */
+  background: linear-gradient(45deg, #4D96FF, #FFEA00);  /* Reverse gradient for hover effect */
+  box-shadow: 0 0 25px rgba(255, 255, 0, 1);  /* Glowing effect */
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card p {
+  color: #222222;  /* Dark text for readability */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 
 /* Grid Conatiner for Game */
 .container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
-  gap: 16px; /* Space between cards */
+  grid-template-columns: 110px 110px 110px 110px; 
+  background-color: #646cff;
+  text-align: center;
+  gap: 50px; /* Space between cards */
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background: linear-gradient(to bottom, #111, #222);  /* Dark background with a slight gradient */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);  /* Soft electric yellow glow */
+  height: 100%;
+  width: 100%;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+.container > div{
+  border: 1px solid white;
 }
+
+/* images */
+img{
+  height: 110px;
+  width: 110px;
+}
+
+/* names */
+.name{
+  font-size: 10px;
+  text-align: center;
+  color: #1a1a1a;
+}
+

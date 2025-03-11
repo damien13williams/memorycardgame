@@ -61,7 +61,7 @@ export default function MemoryGame(){
                     </div>
                 </Card>
             ))}
-        </div>
+            </div>
             <Button onClick={handleRefresh}>Refresh Cards</Button>
             <Button onClick={increaseDifficulty}>Increase Difficulty</Button>
         </div>

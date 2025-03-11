@@ -48,7 +48,9 @@ export default function usePokemonCards(initialLimit = 6) {
   const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
 
   const increaseDifficulty = () => {
-    setLimit(prev => prev + 2); // Increase the number of cards for difficulty
+    if (limit != 12){
+        setLimit(prev => prev + 2); // Increase the number of cards for difficulty
+    }
   };  
 
   return { cards, fetchPokemonCards, increaseDifficulty };
