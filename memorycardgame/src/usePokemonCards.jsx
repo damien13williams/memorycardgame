@@ -6,7 +6,7 @@ export default function usePokemonCards(initialLimit = 6) {
   const [limit, setLimit] = useState(initialLimit); 
 
   useEffect(() => {
-    fetchPokemonCards();    // if I remove the 6 it sometimes adds more and more as I refresh. Maybe keep it to increase difficulty?
+    fetchPokemonCards();  
   }, [limit]);
 
   const fetchPokemonCards = async () => {
@@ -31,7 +31,7 @@ export default function usePokemonCards(initialLimit = 6) {
             randomIds = generateUniqueRandomIds(limit);
         RESPONSE: 
         Sure! Here's an example of the code that retrieves individual Pokémon data (ID, name, and image) from the Pokémon API:
-        
+
       */
       const cardData = await Promise.all(
         randomIds.map(async (id) => {
@@ -43,13 +43,15 @@ export default function usePokemonCards(initialLimit = 6) {
           };
         })
       );
-
-      setCards(shuffleArray(cardData)); // Shuffle cards before displaying
+      
+      // Shuffle cards before displaying
+      setCards(shuffleArray(cardData)); 
     } catch (error) {
       console.error("Error fetching Pokémon data:", error);
     }
   };
 
+  // This is duplicates do not pop up when refreshing enough times for new pokemon 
   const generateUniqueRandomIds = (limit) => {
     let randomIds = [];
     while (randomIds.length < limit) {
@@ -61,6 +63,7 @@ export default function usePokemonCards(initialLimit = 6) {
     return randomIds;
   };
 
+  // Shuffle the cards 
   const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
 
   const increaseDifficulty = () => {

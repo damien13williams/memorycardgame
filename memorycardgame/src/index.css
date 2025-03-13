@@ -1,6 +1,8 @@
+/* Has some of the vite css styles that came with it, so I either modified or deleted them. */
+
 html{
   background: linear-gradient(to bottom, #FF5733, #FF9F00);
-  color: #222222; /* Dark text for contrast */
+  color: #222222; 
   height: 100%;
   width: 100%;
 }
@@ -45,45 +47,45 @@ button {
   height: 35px;
   width: 250px;
   font-size: 11px;
-  background: linear-gradient(90deg, #FFEA00, #FF5733);  /* Yellow to electric blue gradient */
-  color: #222222;  /* Dark text for good contrast */
+  background: linear-gradient(90deg, #FFEA00, #FF5733); 
+  color: #222222;  
   font-weight: bold;
-  border: 2px solid #FFD700;  /* Golden border to match the theme */
+  border: 2px solid #FFD700;  
   border-radius: 8px;
   padding: 12px 20px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(255, 255, 0, 0.6);  /* Subtle yellow glow */
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.6);  
   transition: all 0.3s ease;
   font-family: 'Press Start 2P', cursive;
 }
 
 button:hover {
-  background: linear-gradient(45deg, #4D96FF, #FFEA00);  /* Reverse gradient for hover effect */
-  box-shadow: 0 0 20px rgba(255, 255, 0, 1);  /* Glowing yellow on hover */
+  background: linear-gradient(45deg, #4D96FF, #FFEA00);  
+  box-shadow: 0 0 20px rgba(255, 255, 0, 1);  
 }
 
 button:active {
-  transform: scale(0.98);  /* Slightly shrink button when clicked */
+  transform: scale(0.98); 
 }
 
 
 /* The Card */ 
 .card {
   width: 100%;
-  max-width: 140px;  /* Adjust based on your desired card size */
-  background-color: #FFEA00;  /* Pikachu-inspired yellow */
-  border: 3px solid #FFD700;  /* Golden border to add a shiny, electric feel */
+  max-width: 140px;  
+  background-color: #FFEA00;  
+  border: 3px solid #FFD700;  
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);  /* Electric yellow shadow */
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);  
   text-align: center;
   padding: 10px;
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.1);  /* Slightly enlarge on hover */
-  background: linear-gradient(45deg, #4D96FF, #FFEA00);  /* Reverse gradient for hover effect */
-  box-shadow: 0 0 25px rgba(255, 255, 0, 1);  /* Glowing effect */
+  transform: scale(1.1);  
+  background: linear-gradient(45deg, #4D96FF, #FFEA00); 
+  box-shadow: 0 0 25px rgba(255, 255, 0, 1);  
   cursor: pointer;
 }
 
@@ -94,7 +96,7 @@ button:active {
 }
 
 .card p {
-  color: #222222;  /* Dark text for readability */
+  color: #222222;  
   font-weight: bold;
   margin-top: 10px;
 }
@@ -106,13 +108,13 @@ button:active {
   grid-template-columns: 110px 110px 110px 110px; 
   background-color: #646cff;
   text-align: center;
-  gap: 50px; /* Space between cards */
+  gap: 50px; 
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(to bottom, #111, #222);  /* Dark background with a slight gradient */
+  background: linear-gradient(to bottom, #111, #222);  
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);  /* Soft electric yellow glow */
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
   height: 100%;
   width: 100%;
 }

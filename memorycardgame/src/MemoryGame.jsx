@@ -23,6 +23,7 @@ export default function MemoryGame(){
         }
     }, [cards]);
 
+    // To handle the game if the user earns a point or goes back to zero
     const handleCardClicked = (id) => {
         if(clickedCards.has(id)){
             setScore(0);
@@ -39,14 +40,14 @@ export default function MemoryGame(){
         setShuffledCards(shuffleArray(cards));
     };
 
+    //  Set everything to 0 and and restart game giving the player a new set of cards
     const handleRefresh = () => {
-        setClickedCards(new Set()); // ✅ Reset clicked cards
-        setScore(0); // ✅ Reset score
-        fetchPokemonCards(); // ✅ Get new cards & reshuffle
+        setClickedCards(new Set()); 
+        setScore(0); 
+        fetchPokemonCards();
         setGameKey(Date.now()); // Change the key to force re-render
     };
 
-    // Return
     return (
         <div key={gameKey} className="game">
             <h1 className="header">Pokemon Memory Game</h1>
