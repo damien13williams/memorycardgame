@@ -8,13 +8,13 @@ This project is part of the React unit in the Odin Project under the "States and
 ## **Application Screenshots**
 
 ### **Pokemon Game Base Difficulty**  
-![Library Screenshot](images/pokemon.png)  
+![Pokemon Screenshot](images/pokemon.png)  
 
 ### **Pokemon Game Hardest Difficulty**  
-![Add Book Screenshot](images/difficulty.png)  
+![Difficulty Screenshot](images/difficulty.png)  
 
 ### **Refresh Feature Images**  
-![Filter Screenshot](images/refresh.png)  
+![Refresh Screenshot](images/refresh.png)  
 
 ---
 
@@ -36,7 +36,6 @@ This project is part of the React unit in the Odin Project under the "States and
 - **Chnage of Cards:** Cards must randomize after each click.
 
 ### **Additional Features I Made:**
-- **Icons:** I used many icosn to produce a user friendly and appealing to the eye content using font awesome that I lerned in a previous lesson.
 - **Hover Effect:** I used some hovering effects and transition to showcase some css styling features I have used and learned during the project.
 - **Difficulty Option:** The user can click the increase diffculty button to add 2 cards to the game to memorize.
 - **Reshuffle Cards:** Generates new cards from the pokemon API.
