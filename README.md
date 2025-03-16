@@ -8,13 +8,13 @@ This project is part of the React unit in the Odin Project under the "States and
 ## **Application Screenshots**
 
 ### **Pokemon Game Base Difficulty**  
-![Library Screenshot](images/library-odin-photo.png)  
+![Library Screenshot](images/pokemon.png)  
 
 ### **Pokemon Game Hardest Difficulty**  
-![Add Book Screenshot](images/form-photo.png)  
+![Add Book Screenshot](images/difficulty.png)  
 
 ### **Refresh Feature Images**  
-![Filter Screenshot](images/filter-photo.png)  
+![Filter Screenshot](images/refresh.png)  
 
 ---
 
