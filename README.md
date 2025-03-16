@@ -51,3 +51,14 @@ This project is part of the React unit in the Odin Project under the "States and
 4. Try not pick the same card twice.
 
 ---
+
+## **Future Improvements Planned**
+- **Keep Scores:** Highscore saved and maybe each users individual score saved.
+- **User Authentication:** Add user accounts to hold scores and possibly games.
+
+---
+
+## **Learning Outcomes**
+- **Knowledge of JSX and React:** Learned how to use code in React and JSX.
+- **Structure:** Learned how to structure and set up the application
+- **CSS Styling:** Improved understanding of more css styling
